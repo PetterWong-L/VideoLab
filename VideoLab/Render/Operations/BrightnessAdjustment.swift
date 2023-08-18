@@ -19,10 +19,4 @@ public class BrightnessAdjustment: BasicOperation {
         
         ({ brightness = 0.0 })()
     }
-    
-    public override func updateAnimationValues(at time: CMTime) {
-        if let brightness = KeyframeAnimation.value(for: "brightness", at: time, animations: animations) {
-            self.brightness = brightness
-        }
-    }
 }
