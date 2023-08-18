@@ -8,7 +8,7 @@
 import UIKit
 import CoreMedia
 
-class BrightnessAnimationOperation: BasicOperation {
+public class BrightnessAnimationOperation: BasicOperation {
     public var brightness:Float = 0.0 {
         didSet {
             uniformSettings["brightness"] = brightness
